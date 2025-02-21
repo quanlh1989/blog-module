@@ -1,0 +1,36 @@
+{
+    "name": "quanlh1989/blog-module",
+    "description": "MyModule for Laravel",
+    "authors": [
+        {
+            "name": "Quan Le",
+            "email": "quanlh@runsystem.net"
+        }
+    ],
+    "require": {
+        "nwidart/laravel-modules": "^11.0"
+    },
+    "type": "laravel-module",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Blog\\Providers\\BlogServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Blog\\": "app/",
+            "Modules\\Blog\\Database\\Factories\\": "database/factories/",
+            "Modules\\Blog\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Blog\\Tests\\": "tests/"
+        }
+    }
+}
